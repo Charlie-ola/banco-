@@ -1,0 +1,837 @@
+/* BASE */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 380px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* --- ESTILOS LOGIN (Imagen 1) --- */
+.login-card {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=500'); /* Reemplaza por tu imagen local */
+    background-size: cover;
+    background-position: center;
+}
+
+.title-white { color: white; margin-bottom: 25px; font-weight: 600; }
+
+.input-simple {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btn-blue {
+    width: 100%;
+    padding: 14px;
+    background-color: #2962ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* --- ESTILOS REGISTRO (Imagen 2) --- */
+.register-card { background-color: white; color: #333; }
+
+.icon-header { color: #2ecc71; font-size: 65px; margin-bottom: 5px; }
+.title-black { margin: 0; font-size: 28px; }
+.subtitle-gray { color: #666; margin-bottom: 25px; font-size: 14px; }
+
+.input-with-icon {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 2px 12px;
+}
+
+.input-with-icon i { color: #2ecc71; font-size: 20px; width: 30px; }
+.input-with-icon input { border: none; outline: none; padding: 12px; width: 100%; font-size: 15px; }
+
+.btn-green {
+    width: 100%;
+    padding: 14px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* LINKS Y TEXTOS */
+.footer-links { margin-top: 20px; font-size: 14px; color: white; }
+.register-card .footer-links { color: #333; }
+
+.link-blue-light { color: #448aff; text-decoration: none; display: block; margin-bottom: 10px; }
+.link-green-bold { color: #2ecc71; text-decoration: none; font-weight: bold; }
+.link-blue-flat { color: #007bff; text-decoration: none; }
+
+/* --- ESTILOS PARA LA HOME --- */
+/* --- Variables de Color --- */
+:root {
+    --blue-main: #1A73E8;
+    --bg-light-blue: #E8EAF6;
+    --bg-action: #E3F2FD;
+    --text-dark: #202124;
+    --text-gray: #5F6368;
+    --red-negative: #D93025;
+    --green-positive: #1E8E3E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: var(--text-dark);
+}
+
+.app-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 50px;
+}
+
+/* --- Header --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand-logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Título Principal --- */
+.main-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-title h1 {
+    font-size: 3.5rem;
+    color: var(--blue-main);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.title-underline {
+    width: 300px;
+    height: 2px;
+    background-color: var(--blue-main);
+    margin: 0 auto 20px;
+}
+
+.main-title h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* --- Grid Layout --- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+/* --- Panel Izquierdo --- */
+.balance-card {
+    background-color: var(--bg-light-blue);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.balance-card .label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.balance-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.balance-row .amount {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.balance-row .icon-eye {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.account-info {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    background-color: var(--blue-main);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Transacciones */
+.transactions-container h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.trans-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.trans-icon { font-size: 1.2rem; }
+
+.trans-details .name { font-weight: 600; font-size: 0.95rem; }
+.trans-details .date { color: var(--text-gray); font-size: 0.8rem; }
+
+.trans-amount { font-weight: 600; }
+.negative { color: var(--red-negative); }
+.positive { color: var(--green-positive); }
+
+.btn-secondary {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f1f3f4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* --- Panel Derecho --- */
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.actions-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.actions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 140px; /* Ancho ajustado para que se vea igual a la imagen */
+}
+
+.action-card {
+    background-color: var(--bg-action);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.action-icon {
+    font-size: 1.5rem;
+    color: var(--blue-main);
+    font-weight: bold;
+}
+
+.action-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+/* consignar */
+/* --- VARIABLES DE COLOR (Tomadas de la imagen) --- */
+:root {
+    --text-color-dark: #333333;
+    --text-color-light: #666666;
+    --blue-primary: #1A73E8; /* El azul para el menú activo */
+    --green-bg: #C3DDB8; /* El verde claro del fondo del cuadro */
+    --green-border: #1B5E20; /* El verde oscuro del borde */
+    --green-btn: #00A321; /* El verde brillante del botón */
+    --green-text-card: #1B5E20; /* El verde oscuro para el título del cuadro */
+    --bg-app: #F5F5F5; /* Un gris muy suave para el fondo de la página */
+}
+
+/* --- ESTILOS GENERALES (Reset) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Usamos la fuente moderna */
+    background-color: var(--bg-app);
+    color: var(--text-color-dark);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo para que no se estire demasiado */
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra suave */
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- ESTILOS DEL ENCABEZADO (Header) --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.brand-logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--text-color-dark);
+}
+
+/* El estilo para el enlace activo ('Consignar') */
+.nav-menu a.active {
+    color: var(--blue-primary);
+    border-bottom: 2px solid var(--blue-primary);
+}
+
+.header-right {
+    gap: 20px;
+    color: var(--text-color-light);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+/* --- ESTILOS DEL CONTENIDO PRINCIPAL --- */
+.main-content {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/* --- ESTILOS DE LA TARJETA VERDE (Consignar) --- */
+.consign-card {
+    background-color: var(--green-bg);
+    border: 2px solid var(--green-border);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px; /* Ancho del cuadro */
+    padding: 40px;
+    text-align: center; /* Centra el contenido internamente */
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    color: var(--green-text-card);
+}
+
+.icon-money {
+    font-size: 24px;
+}
+
+.card-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Estilos del formulario */
+.consign-form {
+    text-align: left; /* Alinea etiquetas e inputs a la izquierda */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color-dark);
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--green-border); /* Resalta el borde al hacer click */
+}
+
+/* Estilos del botón */
+.btn-consign {
+    width: 100%;
+    background-color: var(--green-btn);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn-consign:hover {
+    background-color: #008f1d; /* Un tono más oscuro al pasar el mouse */
+}
+
+.btn-consign:active {
+    transform: scale(0.98); /* Efecto de pulsación */
+}
+
+/* Texto del pie del formulario */
+.form-footer-text {
+    font-size: 12px;
+    color: var(--text-color-light);
+    margin-top: 25px;
+    line-height: 1.4;
+}
+/* retirar */
+:root {
+    --red-main: #D32F2F; /* Rojo vibrante del botón */
+    --red-bg: #FDE7E0;   /* Fondo salmón claro del cuadro */
+    --red-border: #E57373; /* Borde del cuadro */
+    --text-dark: #202124;
+    --blue-active: #1A73E8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 100vh;
+    padding: 20px 50px;
+}
+
+/* --- Header & Nav --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.brand-logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-menu a.active {
+    color: var(--blue-active);
+    border-bottom: 2px solid var(--blue-active);
+    padding-bottom: 5px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    background: #e8eaed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Withdraw Card Section --- */
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.withdraw-card {
+    background-color: var(--red-bg);
+    width: 480px;
+    padding: 45px;
+    border-radius: 12px;
+    border: 1px solid var(--red-border);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: var(--red-main);
+    margin-bottom: 40px;
+}
+
+.card-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.withdraw-icon {
+    font-size: 2rem;
+}
+
+/* --- Form Elements --- */
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 14px 15px;
+    padding-right: 45px; /* Espacio para el icono interno */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+.inner-icon {
+    position: absolute;
+    right: 15px;
+    color: #999;
+}
+
+.btn-withdraw {
+    width: 100%;
+    background-color: var(--red-main);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    transition: background 0.2s ease;
+}
+
+.btn-withdraw:hover {
+    background-color: #b71c1c;
+}
+
+.footer-note {
+    font-size: 0.8rem;
+    color: #444;
+    margin-top: 30px;
+    line-height: 1.4;
+}
+/* depositar*/
+:root {
+    --bg-card-blue: #A3C9F8;     /* Azul claro de la tarjeta */
+    --blue-main: #1A73E8;        /* Azul de la navegación activa */
+    --blue-btn: #5C92D1;         /* Azul del botón de transferencia */
+    --text-dark: #333333;
+    --border-blue: #89B3E2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 100vh;
+    padding: 20px 40px;
+}
+
+/* --- Header & Nav --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.brand-logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-menu a.active {
+    color: var(--blue-main);
+    border-bottom: 2px solid var(--blue-main);
+    padding-bottom: 5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* --- Tarjeta de Transferencia --- */
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.transfer-card {
+    background-color: var(--bg-card-blue); /* Fondo azul según imagen */
+    border: 1.5px solid var(--border-blue);
+    border-radius: 12px;
+    width: 450px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--blue-main);
+    margin-bottom: 35px;
+}
+
+.card-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* --- Formulario --- */
+.transfer-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inner-icon {
+    position: absolute;
+    right: 15px;
+    color: #888;
+}
+
+/* --- Botón Transferir --- */
+.btn-transfer {
+    width: 100%;
+    background-color: var(--blue-btn); /* Color acero azulado */
+    color: white;
+    border: 1px solid #4A7AB5;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-transfer:hover {
+    background-color: #4A7AB5;
+}
+
+.form-footer-text {
+    font-size: 12px;
+    color: #444;
+    margin-top: 25px;
+    line-height: 1.4;
+}

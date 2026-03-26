@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Mi Plata - Transacciones</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body onload="cargarPaginaTransacciones()">
+
+    <div class="app-container">
+        <header class="header">
+            <div class="brand-logo" onclick="irAHome()" style="cursor:pointer">Banco Mi Plata</div>
+            <div class="user-nav">
+                <span class="icon-bell">🔔</span>
+                <div class="user-profile">
+                    <div class="user-avatar">👤</div>
+                    <span class="user-name" id="navNombre">XXXXXXXX</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-title">
+            <h2>Bienvenido, <span id="homeNombre">XXXXXXXX</span></h2>
+            <h1 class="trans-title">Transacciones</h1>
+            <div class="title-underline-blue"></div>
+        </section>
+
+        <main class="transactions-list-container">
+            <h3>Todas las Transacciones</h3>
+            <div id="listaTransacciones" class="transactions-full-list">
+                </div>
+            
+            <button class="btn-secondary" onclick="irAHome()" style="margin-top: 20px;">Volver al Home</button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

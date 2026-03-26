@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco mi Plata - Transferir</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body onload="cargarHome()">
+
+    <div class="app-container">
+        <header class="main-header">
+            <div class="header-left">
+                <h1 class="brand-logo" style="cursor:pointer" onclick="irAHome()">Banco mi Plata</h1>
+                <nav class="nav-menu">
+                    <a href="home.html">Home</a>
+                    <a href="consignar.html">Consignar</a>
+                    <a href="retirar.html">Retirar</a>
+                    <a href="depositar.html" class="active">Transferir</a> </nav>
+            </div>
+            <div class="header-right">
+                <span class="icon-bell">🔔</span>
+                <div class="user-info">
+                    <span class="icon-user">👤</span>
+                    <span class="user-name" id="navNombre">XXXXXXXX</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="consign-card">
+                <div class="card-header">
+                    <span class="icon-header">🔄</span>
+                    <h2>Transferir Dinero</h2>
+                </div>
+
+                <form class="consign-form" onsubmit="event.preventDefault(); ejecutarTransferencia();">
+                    <div class="form-group">
+                        <label for="destAccount">Número de Cuenta Destinataria</label>
+                        <input type="text" id="destAccount" placeholder="Ingrese el número de cuenta">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">Monto a Transferir</label>
+                        <input type="text" id="amount" placeholder="Ingrese el monto">
+                    </div>
+
+                    <button type="submit" class="btn-consign">
+                        <span class="btn-icon">🔄</span> Transferir
+                    </button>
+                </form>
+
+                <p class="form-footer-text">
+                    Asegúrese de que la información sea correcta antes de confirmar.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

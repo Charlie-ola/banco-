@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="card register-card">
+            <div class="icon-header">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <h2 class="title-black">Crear Cuenta</h2>
+            <p class="subtitle-gray">Regístrate para comenzar</p>
+
+            <div class="input-with-icon">
+                <i class="fas fa-user"></i>
+                <input type="text" id="regNombre" placeholder="Nombre Completo">
+            </div>
+            <div class="input-with-icon">
+                <i class="fas fa-id-card"></i>
+                <input type="text" id="regCedula" placeholder="Cedula">
+            </div>
+            <div class="input-with-icon">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Correo Electrónico">
+            </div>
+            <div class="input-with-icon">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Confirmar Contraseña">
+            </div>
+
+            <button class="btn-green" onclick="registro()">Registrarse</button>
+
+            <div class="footer-links">
+                <a href="Login.html" class="link-blue-flat">¿Ya tienes una cuenta? Inicia Sesión</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

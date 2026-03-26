@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Mi Plata - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body onload="cargarHome()">
+
+    <div class="app-container">
+        <header class="header">
+            <div class="brand-logo" onclick="irAHome()" style="cursor:pointer">Banco Mi Plata</div>
+            <div class="user-nav">
+                <span class="icon-bell">🔔</span>
+                <div class="user-profile">
+                    <div class="user-avatar">👤</div>
+                    <span class="user-name" id="navNombre">XXXXXXXX</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-title">
+            <h1>Home</h1>
+            <div class="title-underline"></div>
+            <h2>Bienvenido, <span id="homeNombre">XXXXXXXX</span></h2>
+        </section>
+
+        <main class="dashboard-grid">
+            
+            <div class="left-panel">
+                <div class="balance-card">
+                    <p class="label">Saldo actual</p>
+                    <div class="balance-row">
+                        <span class="amount" id="balanceValue">$1,234.560</span>
+                        <span class="icon-eye" id="hideBtn" style="cursor:pointer">👁️</span>
+                    </div>
+                    <p class="account-info">Número de cuenta: XXXX-XXXX-1234</p>
+                    </div>
+
+                <div class="transactions-container">
+                    <h3>Transacciones Recientes</h3>
+                    <div class="transaction-item">
+                        <div class="trans-left">
+                            <span class="trans-icon">👤</span>
+                            <div class="trans-details">
+                                <p class="name">John Doe</p>
+                                <p class="date">Oct 25</p>
+                            </div>
+                        </div>
+                        <span class="trans-amount positive">+$200.000</span>
+                    </div>
+
+                    <button class="btn-secondary" onclick="verDetalles()">Ver todas las Transacciones</button>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <h3 class="actions-title">Acciones rápidas</h3>
+                <div class="actions-list">
+                    <div class="action-card" onclick="depositar()" style="cursor:pointer">
+                        <span class="action-icon">↑</span>
+                        <span class="action-label">Consignar</span>
+                    </div>
+                    <div class="action-card" onclick="retirar()" style="cursor:pointer">
+                        <span class="action-icon">↓</span>
+                        <span class="action-label">Retirar</span>
+                    </div>
+                    <div class="action-card" onclick="transferir()" style="cursor:pointer">
+                        <span class="action-icon">🔄</span>
+                        <span class="action-label">Transferir</span>
+                    </div>
+                </div>
+                <button class="btn-secondary" onclick="volver()" style="margin-top: 20px; width: 100%;">Cerrar Sesión</button>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
